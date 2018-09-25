@@ -1,0 +1,23 @@
+@model RegisterUserViewModel
+
+
+<h1>@T["Welcome to the SaaS module"]</h1>
+
+<form asp-action="Index" method="post">
+    <fieldset class="form-group">
+        <label asp-for="Email">@T["Email"]</label>
+        <input class="form-control" asp-for="Email" />
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label asp-for="SiteName">@T["Site Name"]</label>
+        <input class="form-control" asp-for="SiteName" />
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label asp-for="Handle">@T["Handle"]</label>
+        <input class="form-control" asp-for="Handle" />
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">@T["Submit"]</button>
+</form>
